@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(85, 193, 243, 0.758);
+}
+.company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1.4rem;
+}
+
+.main-body {
+    padding-top: 90px;
+    margin: 0px 1.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    margin-right: 2rem;
+}
+.nav-item {
+    border: none;
+    background-color: transparent;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: all 0.3s;
+}
+
+.nav-item:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    padding: 0.5rem;
+    border-radius: 1.4rem;
+}
+.nav-item:active {
+    background-color: rgba(128, 128, 128, 0.5);
+
+}
+.search-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+}
+#movie-search-bar {
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    width: 40vw;
+}
+#movie-search-btn {
+    border: none;
+    background: none;
+    font-size: 1.9rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+    align-self: baseline;
+}
+#movie-search-btn:hover {
+    color: rgba(96, 96, 96, 0.3);
+}
+
+.movie-search-results{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+.search-result-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    gap: 10px;
+}
+.movie-poster {
+    width: 250px;
+    border-radius: 20px;
+}
+.movie-overview {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    /* truncate to 4 lines */
+    -webkit-line-clamp: 4;
+}
+.search-result-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
