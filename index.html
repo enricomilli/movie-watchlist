@@ -7,26 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        <div class="company">
-            <!-- <img src="/images/Purple Smile Face Logo only.png" alt="logo"> -->
-            <h1 src="/images/Spot-it-Over typeface.png" alt="company-type" id="typeface">PureWatchlist</h1>
-        </div>
-        <div class="nav">
-            <button class="nav-item" id="nav-search-btn">Search</button>
-            <button class="nav-item" id="nav-my-watchlist-btn">My Watchlist</button>
-        </div>
-    </div>
-    <div class="main-body">
-        <h1>Find any title and add to your watchlist!</h1>
-        <form class="search-form" onsubmit="event.preventDefault()">
-            <input type="search" name="main-search-bar" id="movie-search-bar" placeholder="Search">
-            <button id="movie-search-btn" for="main-search-bar">&#9906;</button>
-        </form>
-        <div class="movie-search-results">
-        </div>
-    </div>
-    <script type="module" src="watchlist-app.js"></script>
-    <script src="https://kit.fontawesome.com/5f9e23cb49.js" crossorigin="anonymous"></script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="/src/index.jsx" type="module"></script>
+    <!-- <script type="module" src="watchlist-app.js"></script> -->
 </body>
 </html>
